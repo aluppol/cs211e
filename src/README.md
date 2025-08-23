@@ -2,7 +2,7 @@
 
 ## Quick run (from repo root)
 ```bash
-./gradlew :m01_streams:run --args="--input src/main/resources/world_cities.csv"
+./gradlew run --args="--input src/main/resources/world_cities.csv"
 ```
 
 ## What this is
