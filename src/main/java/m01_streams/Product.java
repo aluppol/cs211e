@@ -1,3 +1,5 @@
+package m01_streams;
+
 public class Product {
     int id;
     String name;

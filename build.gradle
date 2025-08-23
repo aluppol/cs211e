@@ -1,6 +1,8 @@
 plugins {
-    id 'java'
+    id 'application'
 }
+
+application { mainClass = 'm01_streams.Main' }
 
 java {
   toolchain {
@@ -8,10 +10,14 @@ java {
   }
 }
 
-dependencies {
-    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'
-    implementation 'com.fasterxml.jackson.core:jackson-databind'
+repositories {
+    mavenCentral()
+}
 
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
+dependencies {
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.17.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.2'
+
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
 }
